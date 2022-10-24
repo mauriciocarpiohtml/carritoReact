@@ -13,16 +13,27 @@ const TextoProducto = styled.p`
 color:#465b52;
 text-transform:uppercase;
 font-weight:500;
-font-size:16px;
+font-size:14px;
 padding:5px;
 margin-top:35px;
-text-align:center`
+text-align:center;
+margin-left: 25px;
+
+@media(min-width:768px) {
+  font-size:16px;
+  margin-left: 0;
+}
+`
 
 
 const ImagenProducto = styled.img`
-max-width: 100px;
+max-width: 80px;
 border-radius:11px;
 margin: 0 auto;
+
+@media(min-width:768px) {
+  max-width: 100px;
+}
 `
 
 const Eliminar = styled.button`
@@ -35,8 +46,12 @@ color: #fff;
 border-radius: 100px;
 border: none;
 font-weight: 700;
-margin-left: 70px;
+margin-left: 25px;
 cursor: pointer;
+@media(min-width:768px) {
+  margin-left: 70px;
+}
+
 `
 
 
